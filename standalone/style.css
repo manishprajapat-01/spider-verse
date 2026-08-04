@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0B0D12;
+  color: #F1F5F9;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-section, .content-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-center: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+h1 {
+  font-family: 'Bangers', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+
+h1 span {
+  color: #FF1E52;
+}
+
+.pill-badge {
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid #00F0FF;
+  color: #00F0FF;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+/* 3D Scene Container */
+.scroll-scene-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #0B0D12;
+  border-top: 1px solid rgba(0, 240, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+#three-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* HUD Overlay */
+.hud-top-left {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: rgba(20, 24, 36, 0.85);
+  border: 1px solid #00F0FF;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  color: #00F0FF;
+  font-family: monospace;
+  font-size: 0.85rem;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.hud-bottom-right {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background: rgba(20, 24, 36, 0.85);
+  border: 1px solid #FF1E52;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  color: #FF1E52;
+  font-family: monospace;
+  font-size: 0.85rem;
+  box-shadow: 0 0 20px rgba(255, 30, 82, 0.4);
+}
