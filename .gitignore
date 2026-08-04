@@ -14,7 +14,7 @@ web_modules/
 
 # Production build outputs
 dist/
-dist-ssr/
+dist-ssr/   
 build/
 out/
 
